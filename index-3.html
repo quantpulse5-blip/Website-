@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#05070b">
+<meta name="description" content="QuantPulse — AI-powered algorithmic trading technology, strategy testing, broker connectivity and risk-aware workflows.">
+<meta property="og:title" content="QuantPulse | Smarter Trading. Powered by AI.">
+<meta property="og:description" content="Explore QuantPulse algo access, performance-based service, and complete project setup.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"><title>QuantPulse | Smarter Trading. Powered by AI.</title>
+<style>
+:root{--bg:#05070b;--panel:#0b111b;--panel2:#101a28;--text:#f5f7fb;--muted:#a6b2c3;--cyan:#29dff2;--green:#4af3ae;--gold:#f6c75b;--blue:#5595ff;--purple:#3b82f6;--line:rgba(169,192,219,.18);--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:radial-gradient(ellipse at 85% -5%,#15303b 0,transparent 32%),radial-gradient(ellipse at 0% 35%,#0b1931 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),92%);margin:auto}.topbar{padding:7px 12px;text-align:center;background:#090e16;border-bottom:1px solid var(--line);font-size:.77rem;color:#b9c7d8}.topbar b{color:var(--gold)}header{position:sticky;top:0;z-index:10;background:#05070be8;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px;font-size:1.28rem;font-weight:900;letter-spacing:-.05em}.brandname span{color:var(--cyan)}.logo{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;border:1px solid #1788a0;background:linear-gradient(145deg,#092944,#06111d);color:var(--green);font-size:26px;box-shadow:0 0 25px #00d9f022}.links{display:flex;gap:23px;color:var(--muted);font-size:.9rem}.links a:hover{color:var(--cyan)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:11px;border:1px solid transparent;background:linear-gradient(105deg,var(--green),var(--cyan));color:#041019;font-weight:850;font-size:.9rem;cursor:pointer;transition:transform .18s,filter .18s}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.ghost{background:transparent;color:var(--text);border-color:var(--line)}.btn.gold{background:linear-gradient(105deg,#ffe59a,#e6a92e);color:#1a1204}.menu{display:none;background:transparent;color:var(--text);border:1px solid var(--line);padding:8px 11px;border-radius:9px}
+.hero{display:grid;grid-template-columns:1fr .94fr;gap:46px;align-items:center;padding:76px 0 68px}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #28695f;border-radius:999px;color:#a9ffe1;background:#0929239c;font-size:.76rem;letter-spacing:.08em;font-weight:850}.pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}h1{font-size:clamp(2.8rem,5.5vw,5.1rem);line-height:1.01;letter-spacing:-.075em;margin:23px 0 18px}h1 em{font-style:normal;background:linear-gradient(90deg,#fff,var(--gold),var(--cyan));background-clip:text;-webkit-background-clip:text;color:transparent}.lead{font-size:1.1rem;color:var(--muted);max-width:600px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin:26px 0 20px}.proof{display:flex;gap:15px;flex-wrap:wrap;color:#93a6bb;font-size:.8rem}.proof span:before{content:"✓";color:var(--green);font-weight:900;margin-right:6px}
+.terminal{position:relative;border:1px solid #325267;border-radius:23px;padding:18px;background:linear-gradient(145deg,#101d2d,#070d16);box-shadow:0 24px 80px #0008,0 0 45px #00cfe50d;overflow:hidden}.terminal:after{content:"";position:absolute;right:-55px;top:-65px;width:210px;height:210px;border-radius:50%;background:#00e7bd18;filter:blur(40px);pointer-events:none}.termhead{position:relative;display:flex;justify-content:space-between;align-items:center;gap:10px}.termhead strong{font-size:.96rem}.badge{font-size:.68rem;border:1px solid #286b5d;color:#a7ffda;padding:4px 8px;border-radius:999px}.chart{height:190px;margin:14px 0}.chart svg{width:100%;height:100%;display:block}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:#07121e;border:1px solid var(--line);border-radius:10px;padding:10px}.stat small{display:block;color:var(--muted);font-size:.68rem}.stat b{font-size:.86rem}.hint{color:#8398ad;font-size:.7rem;margin:10px 0 0}
+section{padding:64px 0}.head{text-align:center;max-width:730px;margin:0 auto 32px}.kicker{color:var(--cyan);font-size:.73rem;letter-spacing:.17em;text-transform:uppercase;font-weight:900}h2{font-size:clamp(1.9rem,3.5vw,3rem);line-height:1.1;letter-spacing:-.055em;margin:10px 0 12px}.head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.feature{border:1px solid var(--line);border-radius:16px;padding:22px;background:linear-gradient(145deg,#0d1826,#080d15)}.feature .ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:var(--cyan);border:1px solid #1c6372;background:#0a2935;font-weight:900}.feature h3{margin:14px 0 5px;font-size:1.02rem}.feature p{margin:0;color:var(--muted);font-size:.9rem}
+.plan-section{background:linear-gradient(90deg,#080e18e8,#101a29a8,#080e18e8);border-block:1px solid var(--line)}.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;align-items:stretch}.plan{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:19px;padding:23px;background:linear-gradient(145deg,#101a29,#070c14)}.plan.one{border-color:#2aa77e}.plan.two{border-color:#268fc8;box-shadow:0 0 34px #1686d011}.plan.three{border-color:#9c4ac4}.label{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:var(--cyan)}.plan h3{font-size:1.28rem;line-height:1.2;margin:12px 0 7px}.desc{color:var(--muted);font-size:.89rem;margin:0;min-height:66px}.price{font-size:2.35rem;line-height:1.2;letter-spacing:-.06em;font-weight:950;margin:15px 0 2px}.price small{font-size:.78rem;letter-spacing:0;color:var(--muted);font-weight:600}.subprice{color:#91a6ba;font-size:.75rem}.plan ul{list-style:none;padding:0;display:grid;gap:10px;margin:19px 0 23px;font-size:.87rem;color:#dce7f2}.plan li:before{content:"✓";color:var(--green);font-weight:900;margin-right:8px}.plan .btn{margin-top:auto;width:100%}.plan-note{color:#8ca0b4;font-size:.72rem;margin:11px 0 0}.comparison{margin-top:22px;overflow-x:auto;border:1px solid var(--line);border-radius:13px}.comparison table{border-collapse:collapse;width:100%;min-width:550px;background:#08111d}.comparison th,.comparison td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line);font-size:.83rem}.comparison th{color:#d6e7f5;background:#101c2a}.comparison td{color:#b5c5d5}.comparison tr:last-child td{border-bottom:0}
+.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.step{border:1px solid var(--line);border-radius:15px;background:#0a121e;padding:20px}.num{font-size:.72rem;letter-spacing:.13em;color:var(--cyan);font-weight:900}.step h3{margin:8px 0 5px;font-size:1rem}.step p{margin:0;color:var(--muted);font-size:.86rem}.faq{max-width:850px;margin:auto;display:grid;gap:9px}.faq-item{border:1px solid var(--line);border-radius:12px;background:#0a121e;overflow:hidden}.faq button{display:flex;width:100%;justify-content:space-between;gap:15px;padding:17px 19px;background:transparent;color:var(--text);border:0;text-align:left;font-weight:800;cursor:pointer}.faq button span:last-child{color:var(--cyan);font-size:1.2rem}.answer{padding:0 19px 17px;color:var(--muted);font-size:.88rem}.answer[hidden]{display:none}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:34px;border:1px solid #3a6476;border-radius:22px;background:radial-gradient(ellipse at 100% 0%,#21474a88,transparent 42%),linear-gradient(120deg,#111b29,#070d15)}.cta h2{margin:8px 0}.cta p{max-width:650px;color:var(--muted);margin:0}.footer{padding:29px 0 36px;border-top:1px solid var(--line);color:#8da1b6;font-size:.8rem}.footrow{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:16px;flex-wrap:wrap}.footlinks a:hover{color:var(--cyan)}.disclaimer{max-width:1000px;font-size:.73rem;margin:16px 0 0;color:#8193a6}.reveal{opacity:0;transform:translateY(12px);transition:opacity .5s,transform .5s}.reveal.show{opacity:1;transform:none}:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:54px}.terminal{max-width:700px;width:100%;margin:auto}.grid,.plans{grid-template-columns:1fr}.desc{min-height:0}.workflow{grid-template-columns:repeat(2,1fr)}.links{gap:14px}.nav .contact{display:none}}
+@media(max-width:640px){.nav{min-height:66px}.menu{display:block}.links{display:none;position:absolute;top:66px;left:0;right:0;background:#080d16;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;gap:14px}.links.open{display:flex}.hero{padding:43px 0 36px;gap:26px}h1{font-size:clamp(2.55rem,13vw,4rem)}section{padding:47px 0}.workflow{grid-template-columns:1fr}.chart{height:150px}.stats{grid-template-columns:1fr}.stat{display:flex;justify-content:space-between;align-items:center}.cta{padding:25px;align-items:flex-start;flex-direction:column}.actions .btn{flex:1}.proof{gap:8px 13px}.terminal{padding:13px}}
+
+/* ===== Live market, session P&L, reviews ===== */
+.mkt-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}.mstatus{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;font-weight:850;font-size:.82rem;border:1px solid var(--line)}.mstatus i{width:8px;height:8px;border-radius:50%;background:#7b8a9b}.mstatus.open{color:#a9ffe1;border-color:#28695f;background:#0929239c}.mstatus.open i{background:var(--green);box-shadow:0 0 12px var(--green)}.mstatus.closed{color:#ffb4b4;border-color:#6b2c2c;background:#2a0f0f9c}.mstatus.closed i{background:#ff6b6b}.mstatus.pre{color:var(--gold);border-color:#6b5a28;background:#2a220f9c}.mstatus.pre i{background:var(--gold)}.mupd{color:#8398ad;font-size:.75rem}
+.idx{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.idxcard{border:1px solid var(--line);border-radius:16px;padding:20px;background:linear-gradient(145deg,#0d1826,#080d15)}.idxcard small{color:var(--muted);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800}.idxval{font-size:2.3rem;font-weight:950;letter-spacing:-.05em;line-height:1.2;margin:6px 0 2px;font-variant-numeric:tabular-nums}.idxchg{font-weight:800;font-size:.95rem;font-variant-numeric:tabular-nums}.up{color:var(--green)}.dn{color:#ff6b6b}.flat{color:var(--muted)}.idxnote{color:#8398ad;font-size:.72rem;margin-top:6px}
+.sub-h{margin:34px 0 4px;font-size:1.3rem;letter-spacing:-.03em}.sub-p{margin:0 0 14px;color:var(--muted);font-size:.88rem}.sess{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}.sesscard{border:1px solid var(--line);border-radius:13px;padding:14px;background:#0a121e}.sesscard small{display:block;color:var(--muted);font-size:.7rem}.sesscard b{font-size:1.18rem;font-variant-numeric:tabular-nums}.sesscard.total{border-color:#2aa77e}
+.pltable{overflow-x:auto;border:1px solid var(--line);border-radius:13px}.pltable table{border-collapse:collapse;width:100%;min-width:560px;background:#08111d}.pltable th,.pltable td{text-align:right;padding:11px 14px;border-bottom:1px solid var(--line);font-size:.83rem;font-variant-numeric:tabular-nums}.pltable th:first-child,.pltable td:first-child{text-align:left}.pltable th{background:#101c2a;color:#d6e7f5}.pltable tr:last-child td{border-bottom:0}.demo{display:inline-block;font-size:.62rem;font-weight:900;letter-spacing:.08em;color:#1a1204;background:var(--gold);padding:2px 7px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.rev{border:1px solid var(--line);border-radius:16px;padding:20px;background:linear-gradient(145deg,#0d1826,#080d15);display:flex;flex-direction:column;gap:10px}.stars{color:var(--gold);letter-spacing:2px}.rev p{margin:0;color:#dce7f2;font-size:.9rem}.rev footer{margin-top:auto;color:var(--muted);font-size:.78rem;border:0;padding:0}.rev footer b{color:var(--text)}
+@media(max-width:900px){.sess{grid-template-columns:repeat(2,1fr)}.revs{grid-template-columns:1fr}}
+@media(max-width:640px){.idx{grid-template-columns:1fr}.idxval{font-size:2rem}}
+
+/* ===== Gen-Z pro skin ===== */
+:root{--bg:#04070d;--green:#3dffa0;--cyan:#4da3ff;--gold:#3b82f6;--panel:#0a1220}
+body{font-family:"Space Grotesk",Inter,system-ui,sans-serif;background:radial-gradient(ellipse at 90% -10%,#1d4ed877 0,transparent 38%),radial-gradient(ellipse at -5% 30%,#0a4a3a66 0,transparent 36%),radial-gradient(ellipse at 60% 100%,#0b3a8a55 0,transparent 40%),var(--bg);background-attachment:fixed}
+header,.topbar{background:#04070dcc}.logo{border-color:#3b82f6;background:linear-gradient(145deg,#0b2a66,#050a14);box-shadow:0 0 28px #3b82f655}
+.btn{background:linear-gradient(105deg,#22e58a,#3dffa0);border-radius:999px;box-shadow:0 8px 28px #3dffa033}.btn.gold{background:linear-gradient(105deg,#1d4ed8,#3b82f6);color:#fff}.btn.ghost{background:#ffffff0a;box-shadow:none}
+h1 em{background:linear-gradient(90deg,#3dffa0,#4da3ff,#2f7bff);background-clip:text;-webkit-background-clip:text;color:transparent}
+.eyebrow{border-color:#3b82f688;color:#bfdbfe;background:#3b82f61f}
+.terminal,.feature,.plan,.step,.rev,.sesscard,.faq-item,.panel,.bcard,.cta,.comparison,.pltable{background:linear-gradient(145deg,#ffffff0d,#ffffff04);backdrop-filter:blur(10px);border-color:#ffffff1f}
+.feature,.plan,.rev,.step,.panel,.bcard{border-radius:24px;transition:transform .25s,box-shadow .25s,border-color .25s}.feature:hover,.plan:hover,.rev:hover,.step:hover,.bcard:hover{transform:translateY(-5px);border-color:#3b82f6aa;box-shadow:0 18px 50px #3b82f622}
+.plan.one{border-color:#3dffa0aa}.plan.two{border-color:#3b82f6aa}.plan.three{border-color:#60a5faaa}
+.plan-section{background:linear-gradient(90deg,#060a12e8,#0f1b33a8,#060a12e8)}.pltable th,.comparison th{background:#0f1b33}
+.chip{display:inline-flex;gap:6px;padding:8px 14px;border-radius:999px;background:#ffffff0f;border:1px dashed #ffffff40;font-size:.82rem;margin-top:14px}.chip b{color:var(--green)}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}.bcard{padding:18px;border:1px solid #ffffff1f}.bcard small{display:block;color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}.bcard b{font-size:1.6rem;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.duo{display:grid;grid-template-columns:1.2fr 1fr;gap:14px;margin-top:14px}.panel{border:1px solid #ffffff1f;padding:22px}.panel .sess{grid-template-columns:repeat(2,1fr)}#chart2 svg{width:100%;height:auto;display:block}
+input[type=range]{width:100%;accent-color:#22e58a;margin-top:8px}#lotsN{font-size:1.5rem}
+.sticky-cta{display:none}
+@media(max-width:900px){.bento{grid-template-columns:repeat(2,1fr)}.duo{grid-template-columns:1fr}}
+@media(max-width:640px){.sticky-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;justify-content:center;padding:14px;border-radius:999px;font-weight:800;background:linear-gradient(105deg,#1d4ed8,#3b82f6);box-shadow:0 10px 30px #000a}body{padding-bottom:78px}}
+
+/* ===== Blue · Black · Green · Red ===== */
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#3b82f60d 1px,transparent 1px),linear-gradient(90deg,#3b82f60d 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(#000,transparent 85%)}
+.btn.gold,.sticky-cta{background:linear-gradient(105deg,#3b82f6,#1d4ed8);color:#fff}.sticky-cta{box-shadow:0 10px 30px #000a,0 0 24px #3b82f655}
+.feature .ico{background:#0b2347;border-color:#2563eb;color:#60a5fa}.num,.label,.kicker{color:#60a5fa}
+.demo{background:#ff4d5e;color:#fff}.mstatus.pre{color:#93c5fd;border-color:#1d4ed8;background:#0b234799}.mstatus.pre i{background:#3b82f6}
+.topbar b{color:#60a5fa}.terminal{border-color:#1d4ed8aa}.cta{border-color:#1d4ed8aa;background:radial-gradient(ellipse at 100% 0%,#1d4ed855,transparent 42%),linear-gradient(120deg,#0a1220,#04070d)}
+.stars{color:#3b82f6}.eyebrow{border-color:#3b82f688;background:#3b82f61a}.chip{border-color:#3b82f666}
+.up{color:#22e58a}.dn{color:#ff4d5e}.idxchg.dn,.bcard b.dn,.sesscard b.dn{color:#ff4d5e}
+
+/* ===== Extras ===== */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;z-index:50;background:linear-gradient(90deg,#3b82f6,#22e58a)}
+.tl{margin:0 0 16px}.tlbar{position:relative;display:flex;height:34px;border-radius:999px;overflow:hidden;border:1px solid var(--line);background:#08111d}.tlbar .z{display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;color:#9fb4c9}
+.z1{width:36%;background:#3b82f61f}.z2{width:32%;background:#22e58a14}.z3{width:32%;background:#3b82f61f}.tlbar i{position:absolute;top:0;bottom:0;width:3px;background:#22e58a;box-shadow:0 0 14px #22e58a;display:none}
+.tlt{display:flex;justify-content:space-between;font-size:.68rem;color:#7d93a8;margin-top:4px;padding:0 4px}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.acts .btn{font-size:.82rem;padding:10px 18px;cursor:pointer;text-decoration:none}
+.enq{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;margin:0 auto}.enq .full{grid-column:1/-1}
+.enq input,.enq select,.enq textarea{width:100%;padding:14px 16px;border-radius:14px;border:1px solid #ffffff2a;background:#0a1220;color:var(--text);font:inherit}.enq input:focus,.enq select:focus,.enq textarea:focus{outline:2px solid #3b82f6}
+#enqMsg{text-align:center;color:#22e58a;font-size:.88rem;margin-top:12px;min-height:1.2em}
+@media(max-width:640px){.enq{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar"><b>QuantPulse</b> · AI-powered algorithmic trading technology · Trading involves risk</div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><span class="logo">↗</span><span class="brandname">Quant<span>Pulse</span></span></a>
+<nav class="links" id="nav"><a href="#live">Live</a><a href="#technology">Technology</a><a href="#plans">Plans</a><a href="#reviews">Reviews</a><a href="#enquire">Contact</a><a href="#workflow">How it works</a><a href="#faq">FAQs</a></nav>
+<div style="display:flex;gap:9px;align-items:center"><a class="btn gold contact" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">Contact QuantPulse ↗</a><button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">☰</button></div>
+</div></header>
+<main id="home">
+<div class="wrap hero">
+<div class="reveal"><div class="eyebrow"><span class="pulse"></span> AI-POWERED ALGO TRADING · NEW-GEN TRADERS</div>
+<h1>Trade smart.<br><em>Let the algo cook.</em></h1>
+<p class="lead">QuantPulse brings algorithmic trading tools, strategy evaluation, broker connectivity and risk-aware workflows into one technology experience.</p>
+<div class="actions"><a class="btn" href="#plans">Explore our plans →</a><a class="btn ghost" href="#technology">Explore the toolkit</a></div>
+<div class="proof"><span>Strategy backtesting</span><span>Broker connectivity</span><span>Risk-aware workflows</span></div><div class="chip" id="cd"></div></div>
+<div class="terminal reveal"><div class="termhead"><strong>⚡ QuantPulse Trading Terminal</strong><span class="badge">DEMO VISUAL</span></div>
+<div class="chart"><svg viewBox="0 0 560 190" role="img" aria-label="Illustrative market chart"><defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4af3ae" stop-opacity=".32"/><stop offset="1" stop-color="#4af3ae" stop-opacity="0"/></linearGradient></defs><g stroke="#2b4055" stroke-width="1"><path d="M0 30H560M0 70H560M0 110H560M0 150H560"/><path d="M70 0V190M150 0V190M230 0V190M310 0V190M390 0V190M470 0V190"/></g><path d="M0 145L34 128 64 139 92 95 121 112 151 76 181 97 211 60 241 84 272 47 302 70 332 35 362 58 392 27 421 50 452 23 482 42 515 15 560 25V190H0Z" fill="url(#area)"/><path d="M0 145L34 128 64 139 92 95 121 112 151 76 181 97 211 60 241 84 272 47 302 70 332 35 362 58 392 27 421 50 452 23 482 42 515 15 560 25" fill="none" stroke="#4af3ae" stroke-width="3" stroke-linejoin="round"/><g stroke-width="2"><path d="M92 85V132M84 99H100M84 118H100" stroke="#31e5a4"/><path d="M181 70V119M173 82H189M173 101H189" stroke="#31e5a4"/><path d="M272 38V88M264 49H280M264 69H280" stroke="#31e5a4"/><path d="M362 25V76M354 37H370M354 57H370" stroke="#31e5a4"/><path d="M452 15V60M444 26H460M444 44H460" stroke="#31e5a4"/></g></svg></div>
+<div class="stats"><div class="stat"><small>Strategy evaluation</small><b>Backtesting</b></div><div class="stat"><small>Connectivity</small><b>Supported APIs*</b></div><div class="stat"><small>Risk workflow</small><b style="color:var(--green)">Risk-aware</b></div></div><p class="hint">Illustration only — not live market data or verified trading performance. *Compatibility depends on integration.</p></div>
+</div>
+<section id="live"><div class="wrap">
+<div class="head reveal"><div class="kicker">⚡ Live market</div><h2>Nifty 50 &amp; Sensex</h2><p>Index prices appear below; the badge shows whether the market is open or closed.</p></div>
+<div class="mkt-bar reveal"><span class="mstatus closed" id="mstatus"><i></i><span id="mstatusTxt">Checking…</span></span></div>
+<div class="tl reveal" aria-label="Session timeline"><div class="tlbar"><span class="z z1">Morning</span><span class="z z2">Midday</span><span class="z z3">Afternoon</span><i id="tlnow"></i></div><div class="tlt"><span>9:15</span><span>11:30</span><span>13:30</span><span>15:30</span></div></div>
+<div class="idx reveal" id="idxwrap">
+<div class="idxcard"><small>NIFTY 50</small><div class="idxval" id="niftyVal">—</div><div class="idxchg flat" id="niftyChg">Loading…</div><div class="idxnote" id="niftyNote"></div></div>
+<div class="idxcard"><small>SENSEX</small><div class="idxval" id="sensexVal">—</div><div class="idxchg flat" id="sensexChg">Loading…</div><div class="idxnote" id="sensexNote"></div></div>
+</div>
+<div id="tvbox" style="display:none;margin-top:14px"><div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div></div>
+<p class="hint" id="qhint"></p>
+<h3 class="sub-h reveal">Profit booking per lot · by session <span id="plDemo"></span></h3><p class="sub-p reveal" id="plLast" style="color:#60a5fa;font-weight:700;margin-bottom:2px"></p>
+<p class="sub-p reveal" id="plBasis"></p>
+<div class="sess reveal" id="sessCards"></div>
+<div class="pltable reveal"><table><thead><tr><th>Expiry date</th><th>Morning<br><small>9:15–11:30</small></th><th>Midday<br><small>11:30–13:30</small></th><th>Afternoon<br><small>13:30–15:30</small></th><th>Day total</th></tr></thead><tbody id="plBody"></tbody></table></div>
+<p class="hint">Figures are per lot, in ₹, as reported by QuantPulse. Past results do not guarantee future performance.</p>
+<div class="acts reveal" id="acts"><a class="btn ghost" id="shareBtn" target="_blank" rel="noopener noreferrer">Share last expiry on WhatsApp</a><button class="btn ghost" id="csvBtn" type="button">⬇ Download expiry CSV</button></div>
+<div class="bento reveal" id="bento"></div>
+<div class="duo"><div class="panel reveal"><h3 class="sub-h" style="margin-top:0">Expiry-day P&amp;L per lot + cumulative</h3><div id="chart2"></div><p class="hint">Bars = day total · line = cumulative.</p></div>
+<div class="panel reveal"><h3 class="sub-h" style="margin-top:0">Lot calculator <span id="calcDemo"></span></h3><p class="sub-p">Drag to see the average per-session result at your size, based on the expiry history above. Illustrative only, not a forecast.</p><b id="lotsN">1 lot</b><input type="range" id="lots" min="1" max="50" value="1" aria-label="Number of lots"><div class="sess" id="calcOut" style="margin:14px 0 0"></div></div></div>
+</div></section>
+<section id="technology"><div class="wrap"><div class="head reveal"><div class="kicker">The QuantPulse toolkit</div><h2>Technology for a more systematic workflow</h2><p>Test ideas, configure supported integrations and review strategy activity with data and risk awareness at the centre.</p></div>
+<div class="grid">
+<article class="feature reveal"><div class="ico">AI</div><h3>AI-assisted analysis</h3><p>Explore model-assisted market analysis and strategy ideas; outputs are not guarantees or personalized investment advice.</p></article>
+<article class="feature reveal"><div class="ico">▥</div><h3>Backtesting</h3><p>Evaluate historical strategy behaviour and account for transaction costs, slippage and overfitting.</p></article>
+<article class="feature reveal"><div class="ico">↔</div><h3>Broker connectivity</h3><p>Connect compatible accounts where implemented integrations, API permissions and broker terms allow.</p></article>
+<article class="feature reveal"><div class="ico">◇</div><h3>Risk controls</h3><p>Build configured exposure checks, position monitoring and risk limits into the workflow.</p></article>
+<article class="feature reveal"><div class="ico">⌁</div><h3>Market analytics</h3><p>Review price action, indicators and market context using configured data sources.</p></article>
+<article class="feature reveal"><div class="ico">▤</div><h3>Reports & monitoring</h3><p>Review strategy activity and reports to support informed decisions and operational checks.</p></article>
+</div></div></section>
+<section class="plan-section" id="plans"><div class="wrap"><div class="head reveal"><div class="kicker">Three ways to work with us</div><h2>Choose your QuantPulse plan</h2><p>Confirm features, broker compatibility, deliverables and terms in writing before purchase.</p></div>
+<div class="plans">
+<article class="plan one reveal"><div class="label">Plan 01 · Personal access</div><h3>Personal Algo Access</h3><p class="desc">Connect a supported broker account and use QuantPulse with configured strategies.</p><div class="price">₹7,999</div><div class="subprice">Package price · scope to be confirmed</div><ul><li>Supported broker integration</li><li>Strategy setup guidance</li><li>Automation features as agreed</li><li>Configured risk controls</li></ul><a class="btn" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">Enquire about Plan 1 ↗</a><p class="plan-note">Confirm access duration, supported brokers and support inclusions.</p></article>
+<article class="plan two reveal"><div class="label">Plan 02 · Performance-based</div><h3>AI Trading Service</h3><p class="desc">A service arrangement with a fee tied to eligible profits under written terms.</p><div class="price">5% <small>profit share*</small></div><div class="subprice">Fee calculation must be agreed in writing</div><ul><li>Supported strategies and assets</li><li>Activity and performance reporting</li><li>Risk monitoring process</li><li>Transparent fee and loss terms</li></ul><a class="btn" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">Discuss Plan 2 ↗</a><p class="plan-note">*Define eligible net profits, loss treatment, fees, account control and authorization.</p></article>
+<article class="plan three reveal"><div class="label">Plan 03 · Complete setup</div><h3>Complete Algo Project & Setup</h3><p class="desc">A project setup for buyers who want to deploy or customize algo-trading technology.</p><div class="price">₹28,999</div><div class="subprice">Deliverables subject to agreement</div><ul><li>Project setup and documentation as agreed</li><li>Source code if included in contract</li><li>Multi-account features per package scope</li><li>Deployment guidance as agreed</li></ul><a class="btn" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">Enquire about Plan 3 ↗</a><p class="plan-note">Confirm ownership, account limits, support and update terms in writing.</p></article>
+</div>
+<div class="comparison reveal"><table><thead><tr><th>Compare plans</th><th>Plan 1</th><th>Plan 2</th><th>Plan 3</th></tr></thead><tbody><tr><td>Pricing</td><td>₹7,999</td><td>5% eligible profit share*</td><td>₹28,999</td></tr><tr><td>Primary use</td><td>Personal algo access</td><td>Trading service</td><td>Project and setup</td></tr><tr><td>Broker / accounts</td><td>Supported account</td><td>As agreed</td><td>Per package scope</td></tr><tr><td>Source code</td><td>Confirm scope</td><td>Not implied</td><td>Only if included in contract</td></tr></tbody></table></div>
+</div></section>
+<section id="reviews" class="plan-section"><div class="wrap"><div class="head reveal"><div class="kicker">💬 Customer reviews</div><h2>What our customers say about the algo <span id="revDemo"></span></h2><p>Feedback shared by QuantPulse users. Individual experiences vary and are not a promise of returns.</p></div><div class="revs" id="revGrid"></div><p style="text-align:center;margin-top:22px"><a class="btn gold" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">Share your review ↗</a></p></div></section>
+<section id="workflow"><div class="wrap"><div class="head reveal"><div class="kicker">How it works</div><h2>From strategy idea to monitored workflow</h2><p>Start with testing, explicit permissions and defined risk limits before considering live execution.</p></div><div class="workflow">
+<article class="step reveal"><div class="num">STEP 01</div><h3>Define your strategy</h3><p>Specify market, rules, timeframe and risk parameters.</p></article>
+<article class="step reveal"><div class="num">STEP 02</div><h3>Test the logic</h3><p>Use historical data and account for costs, slippage and overfitting.</p></article>
+<article class="step reveal"><div class="num">STEP 03</div><h3>Configure access</h3><p>Verify broker compatibility, API permissions and paper-trading options.</p></article>
+<article class="step reveal"><div class="num">STEP 04</div><h3>Monitor activity</h3><p>Review system status, positions, exposure and configured limits.</p></article>
+</div></div></section>
+<section id="faq" class="plan-section"><div class="wrap"><div class="head reveal"><div class="kicker">FAQs</div><h2>Clear answers before you start</h2></div><div class="faq">
+<div class="faq-item reveal"><button aria-expanded="false"><span>Does QuantPulse guarantee profits?</span><span>+</span></button><div class="answer" hidden>No. Trading involves market, execution, technical and operational risks, including possible loss of capital. Backtests and past results do not guarantee future performance.</div></div>
+<div class="faq-item reveal"><button aria-expanded="false"><span>Which brokers are supported?</span><span>+</span></button><div class="answer" hidden>Support depends on integrations actually implemented and each broker's API permissions and terms. Please confirm compatibility before purchasing.</div></div>
+<div class="faq-item reveal"><button aria-expanded="false"><span>How is the 5% profit share calculated?</span><span>+</span></button><div class="answer" hidden>The written agreement should define eligible net profits, loss treatment, calculation period, fees, account control and payment terms before the service begins.</div></div>
+<div class="faq-item reveal"><button aria-expanded="false"><span>Does Plan 3 include source code and multi-account access?</span><span>+</span></button><div class="answer" hidden>Those deliverables depend on the final written package agreement. Confirm source-code rights, supported account limits, deployment and support terms before payment.</div></div>
+</div></div></section>
+<section><div class="wrap"><div class="cta reveal"><div><div class="kicker">Start a conversation</div><h2>Find your QuantPulse setup.</h2><p>Message us to ask about plans, supported brokers, project scope and setup requirements. Request written terms before purchasing.</p></div><a class="btn gold" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">Message @trad_ewithmonk ↗</a></div></div></section>
+</main>
+<section id="enquire"><div class="wrap"><div class="head reveal"><div class="kicker">🚀 Get started</div><h2>Tell us what you need</h2><p>Pick a plan and we'll get back to you. No spam.</p></div>
+<form class="enq reveal" id="enqForm"><input class="" name="nm" placeholder="Your name" required autocomplete="name">
+<select name="plan" aria-label="Plan"><option>Plan 1 · Personal Algo Access</option><option>Plan 2 · AI Trading Service</option><option>Plan 3 · Complete Setup</option></select>
+<select name="cap" class="full" aria-label="Trading capital"><option>Capital: under ₹1 lakh</option><option>Capital: ₹1–5 lakh</option><option>Capital: ₹5–25 lakh</option><option>Capital: above ₹25 lakh</option></select>
+<textarea name="note" class="full" rows="3" placeholder="Anything we should know? (broker, experience, questions)"></textarea>
+<button class="btn full" type="submit">Send enquiry →</button></form><p id="enqMsg" role="status"></p></div></section>
+<div id="prog"></div>
+<a class="sticky-cta" href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">💬 Message @trad_ewithmonk</a>
+<footer class="footer"><div class="wrap"><div class="footrow"><a class="brand" href="#home"><span class="logo">↗</span><span class="brandname">Quant<span>Pulse</span></span></a><div class="footlinks"><a href="#technology">Technology</a><a href="#plans">Plans</a><a href="#faq">FAQs</a><a href="https://www.instagram.com/trad_ewithmonk/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div><span>© <span id="year"></span> QuantPulse</span></div><p class="disclaimer">Risk disclosure: Algorithmic trading and securities-market activity involve risk, including possible loss of capital. Past performance does not guarantee future results. This website is informational and does not constitute investment advice or a promise of returns. Confirm applicable laws, regulatory requirements, broker terms, product scope and commercial agreements before offering or using any trading service.</p></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu');menu.textContent=open?'✕':'☰';});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu');menu.textContent='☰';}));
+document.querySelectorAll('.faq button').forEach(b=>b.addEventListener('click',()=>{const a=b.nextElementSibling,open=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!open));a.hidden=open;b.lastElementChild.textContent=open?'+':'−';}));
+if('IntersectionObserver'in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');o.unobserve(e.target);}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>o.observe(e));}else document.querySelectorAll('.reveal').forEach(e=>e.classList.add('show'));
+
+/* ================= CONFIG — edit this block ================= */
+// NSE/BSE trading holidays (weekdays when market is closed), format YYYY-MM-DD. Update yearly from the NSE circular.
+const WHATSAPP_NUMBER = ""; // country code + number, e.g. "919876543210". Leave empty to use Instagram DM instead.
+const HOLIDAYS = [];
+const EXPIRY_WEEKDAY = 2;   // 0=Sun … 6=Sat. Nifty weekly expiry = Tuesday (2); Sensex = Thursday (4). Confirm with the exchange circular.
+// Add ONE line per expiry AFTER the day ends: profit booked per lot (₹) for each session. Newest expiry shown automatically.
+const PERFORMANCE = {
+  basis: "Gross per-lot P&L before brokerage and taxes · expiry-day sessions",
+  expiries: {
+    // "2026-10-06": {morning: 0, midday: 0, afternoon: 0},
+  }
+};
+// Add only genuine reviews you have written consent for, e.g. {name:"Rahul S.", plan:"Plan 1 · Personal Algo Access", rating:5, date:"Oct 2026", text:"..."}
+// SAMPLE MODE: while true, any recent expiry without your real entry is filled with sample numbers (shown with a SAMPLE badge).
+// Set to false before going live. Real entries above always override the sample for that date.
+const SHOW_SAMPLE = true;
+const SAMPLE_ROWS = [  // newest expiry first
+  {morning:4200,midday:-1500,afternoon:2800},{morning:1800,midday:3100,afternoon:900},{morning:-2200,midday:2600,afternoon:4100},
+  {morning:3300,midday:700,afternoon:-800},{morning:2100,midday:-1200,afternoon:3600},{morning:1500,midday:2200,afternoon:-600},
+  {morning:-900,midday:3400,afternoon:1700},{morning:2600,midday:-400,afternoon:2100}];
+// Add only genuine reviews with written consent. Remove demo:true from real ones. Sample ones below disappear when SHOW_SAMPLE=false.
+const REVIEWS = [
+  {name:"Customer A",plan:"Plan 1 · Personal Algo Access",rating:5,date:"Sep 2026",text:"Setup with my broker was smooth and the risk limits are easy to configure.",demo:true},
+  {name:"Customer B",plan:"Plan 2 · AI Trading Service",rating:4,date:"Sep 2026",text:"Regular session reports make it easy to follow what the algo is doing.",demo:true},
+  {name:"Customer C",plan:"Plan 3 · Complete Setup",rating:5,date:"Oct 2026",text:"Clear documentation and responsive support during deployment.",demo:true}
+].filter(r=>SHOW_SAMPLE||!r.demo);
+/* ============================================================ */
+
+(function(){
+const IST='Asia/Kolkata', $=id=>document.getElementById(id);
+const inr=n=>(n<0?'−':'+')+'₹'+Math.abs(Math.round(n)).toLocaleString('en-IN');
+const cls=n=>n>0?'up':n<0?'dn':'flat';
+const num=n=>n.toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
+
+function istNow(){const p=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:IST,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',weekday:'short',hourCycle:'h23'}).formatToParts(new Date()).map(x=>[x.type,x.value]));return{date:`${p.year}-${p.month}-${p.day}`,mins:+p.hour*60+ +p.minute,wd:p.weekday}}
+function marketState(){const t=istNow();if(t.wd==='Sat'||t.wd==='Sun')return'closed';if(HOLIDAYS.includes(t.date))return'closed';
+ if(t.mins>=555&&t.mins<930)return'open';if(t.mins>=540&&t.mins<555)return'pre';return'closed'}
+function paintStatus(){const st=marketState(),el=$('mstatus');el.className='mstatus '+st;
+ $('mstatusTxt').textContent=st==='open'?'Market Open':st==='pre'?'Pre-open session (opens 9:15 AM IST)':'Market Closed';return st}
+
+const yurl=s=>'https://query1.finance.yahoo.com/v8/finance/chart/'+encodeURIComponent(s)+'?interval=1m&range=1d';
+const PROXIES=[u=>u,u=>'https://api.allorigins.win/raw?url='+encodeURIComponent(u),u=>'https://corsproxy.io/?'+encodeURIComponent(u)];
+async function quote(sym){for(const px of PROXIES){try{const r=await fetch(px(yurl(sym)),{cache:'no-store'});if(!r.ok)continue;const m=(await r.json()).chart.result[0].meta;
+ if(m&&m.regularMarketPrice)return{price:m.regularMarketPrice,prev:m.chartPreviousClose||m.previousClose,time:m.regularMarketTime}}catch(e){}}return null}
+function paintIdx(k,d){if(!d)return;$(k+'Val').textContent=num(d.price);const c=d.prev?d.price-d.prev:0,pc=d.prev?c/d.prev*100:0;
+ $(k+'Chg').className='idxchg '+cls(c);$(k+'Chg').textContent=(c>=0?'▲ ':'▼ ')+num(Math.abs(c))+' ('+(c>=0?'+':'−')+Math.abs(pc).toFixed(2)+'%)';
+ $(k+'Note').textContent=(marketState()==='open'?'Live':'Last close')+' · '+new Date(d.time*1000).toLocaleTimeString('en-IN',{timeZone:IST,hour:'2-digit',minute:'2-digit'})+' IST · may be delayed'}
+let gotQ=false,tvOn=false;
+function loadTicker(){if(tvOn)return;tvOn=true;$('idxwrap').style.display='none';$('tvbox').style.display='block';const c=document.querySelector('#tvbox .tradingview-widget-container'),sc=document.createElement('script');
+ sc.src='https://s3.tradingview.com/external-embedding/embed-widget-tickers.js';sc.async=true;
+ sc.innerHTML=JSON.stringify({symbols:[{proName:'NSE:NIFTY',title:'NIFTY 50'},{proName:'BSE:SENSEX',title:'SENSEX'}],colorTheme:'dark',isTransparent:true,showSymbolLogo:false,locale:'en'});c.appendChild(sc)}
+async function refreshQ(){const [n,b]=await Promise.all([quote('^NSEI'),quote('^BSESN')]);
+ if(n||b){gotQ=true;paintIdx('nifty',n);paintIdx('sensex',b);$('qhint').textContent='Index prices from Yahoo Finance; may be delayed.'}
+ else if(!gotQ){loadTicker();$('qhint').textContent='Showing TradingView ticker. If blank, disable your ad-blocker or open the page over the internet.'}}
+const iso=d=>d.toISOString().slice(0,10),isTD=d=>{const w=d.getUTCDay();return w>0&&w<6&&!HOLIDAYS.includes(iso(d))};
+function lastExpiries(n){const t=istNow(),d=new Date(t.date+'T00:00:00Z'),out=[];d.setUTCDate(d.getUTCDate()+1);
+ for(let i=0;i<90&&out.length<n;i++){if(d.getUTCDay()===EXPIRY_WEEKDAY){const e=new Date(d);while(!isTD(e))e.setUTCDate(e.getUTCDate()-1);
+  const es=iso(e);if((es<t.date||(es===t.date&&t.mins>=930))&&!out.includes(es))out.push(es)}d.setUTCDate(d.getUTCDate()-1)}
+ return out.sort().reverse()}
+function getData(n){return lastExpiries(n).map((d,i)=>{const r=PERFORMANCE.expiries[d];
+ if(r)return{date:d,...r};if(SHOW_SAMPLE&&SAMPLE_ROWS[i])return{date:d,...SAMPLE_ROWS[i],sample:true};return{date:d}})}
+function paintPL(){$('plBasis').textContent=PERFORMANCE.basis;const R=getData(5),L=R[0],has=r=>r.morning!=null,
+ f=v=>v==null?'<td class="flat">—</td>':`<td class="${cls(v)}">${inr(v)}</td>`;
+ $('plDemo').innerHTML=R.some(r=>r.sample)?'<span class="demo">SAMPLE DATA</span>':'';
+ $('plLast').textContent='Last expiry: '+new Date(L.date+'T00:00:00Z').toLocaleDateString('en-IN',{timeZone:'UTC',weekday:'long',day:'numeric',month:'short',year:'numeric'});
+ $('sessCards').innerHTML=[['Morning','morning'],['Midday','midday'],['Afternoon','afternoon']].map(([l,k])=>`<div class="sesscard"><small>${l}</small><b class="${has(L)?cls(L[k]):'flat'}">${has(L)?inr(L[k]):'—'}</b></div>`).join('')+`<div class="sesscard total"><small>Expiry day total</small><b class="${has(L)?cls(T0(L)):'flat'}">${has(L)?inr(T0(L)):'Update pending'}</b></div>`;
+ $('plBody').innerHTML=R.map(r=>`<tr><td>${r.date}${r===L?' <small>(latest)</small>':''}</td>`+(has(r)?f(r.morning)+f(r.midday)+f(r.afternoon)+`<td class="${cls(T0(r))}"><b>${inr(T0(r))}</b></td>`:f()+f()+f()+'<td class="flat">—</td>')+'</tr>').join('')}
+
+function paintReviews(){const g=$('revGrid');$('revDemo').innerHTML=REVIEWS.some(r=>r.demo)?'<span class="demo">SAMPLE</span>':'';
+ if(!REVIEWS.length){g.innerHTML='<article class="rev" style="grid-column:1/-1;text-align:center"><p>Verified customer reviews will appear here. Used QuantPulse? Share your experience below.</p></article>';return}
+ const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+ g.innerHTML=REVIEWS.map(r=>`<article class="rev"><div class="stars" aria-label="${r.rating} out of 5">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</div><p>“${esc(r.text)}”</p><footer><b>${esc(r.name)}</b> · ${esc(r.plan)} · ${esc(r.date)}</footer></article>`).join('')}
+const T0=d=>d.morning+d.midday+d.afternoon;
+function nextEv(){const t=istNow();if(marketState()==='open')return['Market closes in',930-t.mins];
+ for(let d=0;d<10;d++){const dt=new Date(t.date+'T00:00:00Z');dt.setUTCDate(dt.getUTCDate()+d);const w=dt.getUTCDay();
+  if(w===0||w===6||HOLIDAYS.includes(dt.toISOString().slice(0,10)))continue;const m=d*1440+555-t.mins;if(m>0)return['Market opens in',m]}return null}
+function paintCD(){const e=nextEv(),el=$('cd');if(!e){el.style.display='none';return}const h=Math.floor(e[1]/60),m=e[1]%60;
+ el.innerHTML='⏱ '+e[0]+' <b>'+(h>=24?Math.floor(h/24)+'d ':'')+(h%24)+'h '+m+'m</b>'+(new Date(istNow().date+'T00:00:00Z').getUTCDay()===EXPIRY_WEEKDAY&&isTD(new Date(istNow().date+'T00:00:00Z'))?' · 🔥 Expiry day':'')}
+const pub=()=>getData(8).filter(r=>r.morning!=null);
+function paintStats(){const D=pub(),has=D.length>0;$('bento').style.display=has?'':'none';document.querySelector('.duo').style.display=has?'':'none';if(!has)return;
+ const S=D.flatMap(d=>[d.morning,d.midday,d.afternoon]),sum=D.reduce((a,d)=>a+T0(d),0),avg=sum/D.length;
+ $('bento').innerHTML=[['Session win rate',Math.round(S.filter(x=>x>0).length/S.length*100)+'%',''],['Avg per expiry',inr(avg),cls(avg)],['Best session',inr(Math.max(...S)),'up'],['Last '+D.length+' expiries',inr(sum),cls(sum)]].map(x=>`<div class="bcard"><small>${x[0]}</small><b class="${x[2]}">${x[1]}</b></div>`).join('')}
+function paintChart(){const D=pub().reverse();if(!D.length)return;const T=D.map(T0);let c=0;const C=T.map(v=>c+=v),W=560,H=190,mx=Math.max(...T.map(Math.abs),...C.map(Math.abs),1),y=v=>H/2-v/mx*(H/2-26),bw=W/D.length;
+ let g=`<line x1="0" x2="${W}" y1="${H/2}" y2="${H/2}" stroke="#ffffff30"/>`;
+ T.forEach((v,i)=>{g+=`<rect x="${i*bw+bw*.2}" y="${v>=0?y(v):H/2}" width="${bw*.6}" height="${Math.abs(y(v)-H/2)}" rx="6" fill="${v>=0?'#22e58a':'#ff4d5e'}" opacity=".85"/><text x="${i*bw+bw/2}" y="${H-4}" fill="#8da1b6" font-size="11" text-anchor="middle">${D[i].date.slice(5)}</text>`});
+ g+=`<polyline fill="none" stroke="#60a5fa" stroke-width="3" stroke-linejoin="round" points="${C.map((v,i)=>(i*bw+bw/2)+','+y(v)).join(' ')}"/>`;
+ $('chart2').innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Expiry-day totals per lot and cumulative">${g}</svg>`}
+function paintCalc(){const D=pub();if(!D.length)return;const av=k=>D.reduce((a,d)=>a+d[k],0)/D.length,r=$('lots'),ad=D.reduce((a,d)=>a+T0(d),0)/D.length;
+ $('calcDemo').innerHTML=D.some(r=>r.sample)?'<span class="demo">SAMPLE</span>':'';const go=()=>{const n=+r.value;$('lotsN').textContent=n+(n>1?' lots':' lot');
+  $('calcOut').innerHTML=[['Morning','morning'],['Midday','midday'],['Afternoon','afternoon']].map(([l,k])=>`<div class="sesscard"><small>${l}</small><b class="${cls(av(k))}">${inr(av(k)*n)}</b></div>`).join('')+`<div class="sesscard total"><small>Avg expiry day</small><b class="${cls(ad)}">${inr(ad*n)}</b></div>`};
+ r.oninput=go;go()}
+function paintTL(){const t=istNow(),n=$('tlnow');n.style.display=marketState()==='open'?'block':'none';n.style.left=Math.min(99.5,Math.max(0,(t.mins-555)/375*100))+'%'}
+function actions(){const R=getData(5),L=R[0],ok=L.morning!=null&&!L.sample;$('acts').style.display=R.some(r=>r.morning!=null)?'':'none';$('shareBtn').style.display=ok?'':'none';
+ if(ok)$('shareBtn').href='https://wa.me/?text='+encodeURIComponent(`QuantPulse · Last expiry ${L.date}\nPer lot: Morning ${inr(L.morning)} | Midday ${inr(L.midday)} | Afternoon ${inr(L.afternoon)} | Total ${inr(T0(L))}\nGross, before charges. Past performance does not guarantee future results.`);
+ $('csvBtn').onclick=()=>{const rows=[['Expiry date','Morning','Midday','Afternoon','Total','Sample']].concat(getData(8).filter(r=>r.morning!=null).map(r=>[r.date,r.morning,r.midday,r.afternoon,T0(r),r.sample?'yes':'no']));
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([rows.map(r=>r.join(',')).join('\n')],{type:'text/csv'}));a.download='quantpulse-expiry-pnl.csv';a.click()}}
+function enquiry(){$('enqForm').onsubmit=async e=>{e.preventDefault();const f=e.target,msg=`Hi QuantPulse, I'm ${f.nm.value.trim()}. Interested in: ${f.plan.value}. ${f.cap.value}. ${f.note.value.trim()}`;
+ if(WHATSAPP_NUMBER){open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank');$('enqMsg').textContent='Opening WhatsApp…';return}
+ try{await navigator.clipboard.writeText(msg)}catch(_){}
+ $('enqMsg').textContent='Message copied. Paste it in our Instagram DM.';open('https://www.instagram.com/trad_ewithmonk/','_blank')}}
+addEventListener('scroll',()=>{const h=document.documentElement;$('prog').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight||1)*100)+'%'},{passive:true});
+paintPL();paintStats();actions();enquiry();paintTL();paintChart();paintCalc();paintReviews();paintStatus();paintCD();refreshQ();setInterval(()=>{paintStatus();paintCD();paintTL()},30000);setInterval(()=>{if(marketState()!=='closed'&&!tvOn)refreshQ()},15000);
+})();
+</script>
+</body>
+</html>
